@@ -1,0 +1,58 @@
+// @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+@import './colors.scss';
+
+body {
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+	margin: 0px;
+	font-size: 3rem;
+	color: $color4;
+}
+
+.subtitle {
+	margin: 10px;
+	color: $color3;
+
+	a {
+		color: $color3;
+	}
+	a:visited {
+		color: $color3;
+	}
+	a:hover {
+		color: $color5;
+	}
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	border: 0;
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	// font-family: 'Roboto', sans-serif;
+	// font-weight: 300;
+	font-size: 1rem;
+	color: #ffffff;
+	background-color: $color5;
+	text-align: center;
+	// transition: all 0.2s;
+}
+.button:hover {
+	background-color: grey;
+}

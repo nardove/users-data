@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './App.scss';
+import { loadData } from './data.js';
+import UsersController from './UserCard/UsersController.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const URL = 'https://randomuser.me/api/?results=10';
+
+export default function App() {
+	const [isLoading, setIsLoading] = useState(true);
+	const [usersData, setUsersData] = useState(null);
+
+	useEffect(() => {
+		const getData = async () => {
+			setUsersData(await loadData(URL));
+			setIsLoading(false);
+		};
+		getData();
+	}, []);
+
+	return (
+		<div className='App'>
+			<h1 className='title'>Browsing users data</h1>
+
+			{isLoading ? (
+				<h2 className='subtitle'>Please wait a moment, loading data ...</h2>
+			) : (
+				<UsersController results={usersData.results.reverse()} />
+			)}
+		</div>
+	);
 }
-
-export default App;
