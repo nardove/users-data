@@ -1,10 +1,10 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
 import styles from './UserCard.module.scss';
 
 export default function UserCard(props) {
 	return (
-		<div className={styles.UserCard}>
+		// <div className={styles.UserCard}>
+		<Fragment>
 			<div className={styles.Thumbnail}>
 				<img src={props.img} alt='Thumbnail' />
 			</div>
@@ -17,6 +17,7 @@ export default function UserCard(props) {
 			<div className={styles.UserRegistrationDate}>
 				{`Registration date: ${props.registered.date.substring(0, 10)}`}
 			</div>
-		</div>
+		</Fragment>
+		// </div>
 	);
 }

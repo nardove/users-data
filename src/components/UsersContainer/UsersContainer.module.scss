@@ -10,6 +10,22 @@ font-family: 'Inconsolata', monospace;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 420px;
+	// align-content: center;
+	// justify-content: center;
+	height: 530px;
 	// border: 1px solid red;
+}
+
+.UserCard {
+	position: absolute;
+	background: white;
+	width: 280px;
+	height: 400px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// justify-content: space-evenly;
+	justify-content: space-around;
 }

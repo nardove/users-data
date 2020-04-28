@@ -5,7 +5,7 @@ import styles from './CardsControls.module.scss';
 const CardsControls = (props) => {
 	return (
 		<div className={styles.CardsControls}>
-			<button id='prev' className={styles.Button} onClick={props.shift}>
+			<button className={styles.Button} id='prev' onClick={props.shift}>
 				{`< Prev`}
 			</button>
 			<button id='details' className={styles.Button} onClick={props.view}>

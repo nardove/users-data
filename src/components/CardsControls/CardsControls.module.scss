@@ -2,4 +2,26 @@
 	display: flex;
 	flex-direction: row;
 	align-content: space-between;
+
+	.Button {
+		display: inline-block;
+		padding: 0.3em 1.2em;
+		margin: 0 0.3em 0.3em 0;
+		border: 0;
+		border-radius: 2em;
+		box-sizing: border-box;
+		text-decoration: none;
+		text-align: center;
+		font-size: 0.9em;
+		color: #ffffff;
+		background-color: #4eb5f1;
+	}
+	.Button:hover {
+		background-color: #4095c6;
+	}
+	.Button:focus {
+		outline: 0;
+		// outline-color: white;
+		background-color: #4095c6;
+	}
 }
