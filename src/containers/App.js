@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import UsersContainer from '../components/UsersContainer/UsersContainer.js';
 
 import styles from './App.module.scss';
