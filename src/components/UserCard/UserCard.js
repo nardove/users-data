@@ -9,12 +9,9 @@ export default function UserCard(props) {
 				<img src={props.img} alt='Thumbnail' />
 			</div>
 			<div className={styles.UserName}>{`${props.name.first} ${props.name.last}`}</div>
-			<div className={styles.UserEmail}>{`${props.email}`}</div>
-			<div className={styles.UserPhone}>{`${props.phone}`}</div>
-			<div className={styles.UserLocation}>
-				{`${props.location.city}, ${props.location.country}`}
-			</div>
-			<div className={styles.UserRegistrationDate}>
+			<div className={styles.UserDetails}>{`${props.email}`}</div>
+			{props.id && <div className={styles.UserDetails}>{`${props.id}`}</div>}
+			<div className={styles.UserDetails}>
 				{`Registration date: ${props.registered.date.substring(0, 10)}`}
 			</div>
 		</Fragment>

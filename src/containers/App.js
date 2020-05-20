@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UsersContainer from '../components/UsersContainer/UsersContainer.js';
+import { ReactComponent as Logo } from '../assets/users-data-logo.svg';
 
 import styles from './App.module.scss';
 
@@ -33,7 +34,16 @@ class App extends Component {
 
 		return (
 			<div className={styles.App}>
-				<h1>Browsing users data</h1>
+				<div className={styles.Logo}>
+					<Logo />
+					<h1>Browsing users data</h1>
+				</div>
+				<p>
+					A deck of user cards from{' '}
+					<a href='https://randomuser.me/' target='blank'>
+						randomuser.me
+					</a>
+				</p>
 				{content}
 			</div>
 		);

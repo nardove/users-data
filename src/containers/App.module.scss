@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nunito+Sans:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
+@import '../Colors.scss';
 
 body {
 	margin: 0;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Noto Sans SC', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -13,6 +15,22 @@ body {
 	align-items: center;
 }
 
-.App h1 {
-	margin: 0px;
+.App a {
+	color: $cyan;
+}
+
+.Logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+.Logo svg {
+	width: 32px;
+	height: 32px;
+}
+
+.Logo h1 {
+	margin: 0px 10px;
 }
