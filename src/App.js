@@ -1,12 +1,6 @@
-<<<<<<< HEAD:src/App.js
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import UsersContainer from './components/UsersContainer/UsersContainer.js';
 import { ReactComponent as Logo } from './assets/users-data-logo.svg';
-=======
-import React, { Component, Fragment } from 'react';
-import UsersContainer from '../components/UsersContainer/UsersContainer.js';
-import { ReactComponent as Logo } from '../assets/users-data-logo.svg';
->>>>>>> v2:src/containers/App.js
 
 import styles from './App.module.scss';
 
