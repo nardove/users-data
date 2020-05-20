@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import UsersContainer from '../components/UsersContainer/UsersContainer.js';
 import { ReactComponent as Logo } from '../assets/users-data-logo.svg';
 
