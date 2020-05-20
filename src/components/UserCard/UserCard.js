@@ -3,7 +3,6 @@ import styles from './UserCard.module.scss';
 
 export default function UserCard(props) {
 	return (
-		// <div className={styles.UserCard}>
 		<Fragment>
 			<div className={styles.Thumbnail}>
 				<img src={props.img} alt='Thumbnail' />
@@ -15,6 +14,5 @@ export default function UserCard(props) {
 				{`Registration date: ${props.registered.date.substring(0, 10)}`}
 			</div>
 		</Fragment>
-		// </div>
 	);
 }

@@ -1,19 +1,10 @@
 @import '../../Colors.scss';
 
-/*
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Inconsolata', monospace;
-*/
-
 .UsersContainer {
-	// font-family: 'Nunito Sans', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// align-content: center;
-	// justify-content: center;
 	height: 480px;
-	// border: 1px solid red;
 }
 
 .UserCard {
@@ -26,6 +17,5 @@ font-family: 'Inconsolata', monospace;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// justify-content: space-evenly;
 	justify-content: space-around;
 }
