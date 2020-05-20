@@ -19,12 +19,16 @@ body {
 	color: $cyan;
 }
 
+.App p {
+	margin-bottom: 0;
+}
+
 .Logo {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 10px 0;
+	margin-top: 5px;
 }
 .Logo svg {
 	width: 32px;
