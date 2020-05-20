@@ -143,6 +143,7 @@ class UsersContainer extends Component {
 				<div className={styles.UsersContainer}>
 					{this.state.data.map((user, index) => (
 						<div
+							key={Math.random()}
 							ref={(div) => (this.cardsTweenRefArray[index] = div)}
 							className={styles.UserCard}>
 							<UserCard
