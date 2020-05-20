@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import UsersContainer from '../components/UsersContainer/UsersContainer.js';
-import { ReactComponent as Logo } from '../assets/users-data-logo.svg';
+import UsersContainer from './components/UsersContainer/UsersContainer.js';
+import { ReactComponent as Logo } from './assets/users-data-logo.svg';
 
 import styles from './App.module.scss';
 
-import { loadData } from '../data.js';
+import { loadData } from './data.js';
 
 const URL = 'https://randomuser.me/api/?results=10';
 
