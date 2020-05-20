@@ -32,6 +32,7 @@ class UsersContainer extends Component {
 			const theta = angle * (this.numCards - 1 - index);
 			this.cardStack.push(index);
 			this.angles.push(theta);
+			// element.style.zIndex = index;
 			this.tween
 				.set(element, { transformOrigin: '20% 60%' })
 				.fromTo(
@@ -51,6 +52,7 @@ class UsersContainer extends Component {
 				)
 				.delay(index * 0.15);
 		});
+		// this.cardStack.reverse();
 	}
 
 	userCardsHandler = (event) => {
@@ -141,7 +143,6 @@ class UsersContainer extends Component {
 				<div className={styles.UsersContainer}>
 					{this.state.data.map((user, index) => (
 						<div
-							key={Math.random()}
 							ref={(div) => (this.cardsTweenRefArray[index] = div)}
 							className={styles.UserCard}>
 							<UserCard
