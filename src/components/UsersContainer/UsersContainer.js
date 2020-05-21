@@ -140,24 +140,29 @@ class UsersContainer extends Component {
 
 		return (
 			<Fragment>
-				<div className={styles.UsersContainer}>
-					{this.state.data.map((user, index) => (
-						<div
-							ref={(div) => (this.cardsTweenRefArray[index] = div)}
-							className={styles.UserCard}>
-							<UserCard
-								key={user.id.value}
-								img={user.picture.large}
-								name={user.name}
-								email={user.email}
-								id={user.id.value}
-								location={user.location}
-								registered={user.registered}
-							/>
-						</div>
-					))}
+				<div className={styles.Container}>
+					<div className={styles.UsersContainer}>
+						{this.state.data.map((user, index) => (
+							<div
+								ref={(div) => (this.cardsTweenRefArray[index] = div)}
+								className={styles.UserCard}>
+								<UserCard
+									key={user.id.value}
+									img={user.picture.large}
+									name={user.name}
+									email={user.email}
+									id={user.id.value}
+									location={user.location}
+									registered={user.registered}
+								/>
+							</div>
+						))}
+					</div>
+					<CardsControls
+						shift={this.userCardsHandler}
+						view={this.viewUserDetailsHandler}
+					/>
 				</div>
-				<CardsControls shift={this.userCardsHandler} view={this.viewUserDetailsHandler} />
 				{userCardDisplay}
 			</Fragment>
 		);

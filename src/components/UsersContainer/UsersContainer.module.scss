@@ -1,17 +1,24 @@
 @import '../../Colors.scss';
 
+.Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .UsersContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 480px;
+	// align-content: space-between;
+	// height: 80vh;
 }
 
 .UserCard {
 	position: absolute;
 	background: $white;
 	width: 280px;
-	height: 360px;
+	height: 380px;
 	border: 1px solid $deep_grey;
 	border-radius: 10px;
 	display: flex;

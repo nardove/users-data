@@ -12,14 +12,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100vh;
 }
 
 .App a {
 	color: $cyan;
 }
 
-.App p {
-	margin-bottom: 0;
+.Header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .Logo {
@@ -33,7 +36,9 @@ body {
 	width: 32px;
 	height: 32px;
 }
-
 .Logo h1 {
 	margin: 0px 10px;
+}
+.Logo p {
+	margin-bottom: 0;
 }

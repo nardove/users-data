@@ -28,13 +28,17 @@
 	justify-content: space-around;
 }
 
+.UserCardDisplay h2 {
+	margin: 0;
+}
+
 .Bold {
 	font-weight: bold;
 }
 
 .DisplayCard {
-	width: 80%;
-	height: 80%;
+	min-width: 650px;
+	height: 70%;
 	border: 1px solid $deep_grey;
 	border-radius: 20px;
 	display: flex;

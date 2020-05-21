@@ -90,9 +90,8 @@ const UserCardDisplay = (props) => {
 				</div>
 			</div>
 			<button className={buttons.Button} onClick={closeHandler}>
-				Close
+				X Close
 			</button>
-			{console.log(user)}
 		</div>
 	);
 };
