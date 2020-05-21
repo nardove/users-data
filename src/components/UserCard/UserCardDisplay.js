@@ -6,6 +6,7 @@ import buttons from '../buttons.module.scss';
 
 const UserCardDisplay = (props) => {
 	const user = props.user;
+	const h2Ref = useRef(null);
 	const imgRef = useRef(null);
 	const cardRef = useRef(null);
 
@@ -19,6 +20,11 @@ const UserCardDisplay = (props) => {
 			imgRef.current,
 			{ opacity: 0, y: 50 },
 			{ opacity: 1, y: 0, duration: 0.3, delay: 0.15, ease: 'back.out(1.5)' }
+		);
+		gsap.fromTo(
+			h2Ref.current,
+			{ opacity: 0.5, y: 50 },
+			{ opacity: 1, y: 0, duration: 0.3, delay: 0.1, ease: 'back.out(1)' }
 		);
 	}, []);
 
@@ -37,11 +43,17 @@ const UserCardDisplay = (props) => {
 			duration: 0.3,
 			ease: 'back.in(1.5)',
 		});
+		gsap.to(h2Ref.current, {
+			opacity: 0,
+			y: 50,
+			duration: 0.2,
+			ease: 'back.in(1)',
+		});
 	}
 
 	return (
 		<div className={styles.UserCardDisplay}>
-			<h2>User details</h2>
+			<h2 ref={h2Ref}>User details</h2>
 			<div className={styles.DisplayCard} ref={cardRef}>
 				<div ref={imgRef}>
 					<img className={styles.Thumbnail} src={user.picture.large} />
