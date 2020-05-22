@@ -34,16 +34,18 @@ class App extends Component {
 
 		return (
 			<div className={styles.App}>
-				<div className={styles.Logo}>
-					<Logo />
-					<h1>Browsing users data</h1>
+				<div className={styles.Header}>
+					<div className={styles.Logo}>
+						<Logo />
+						<h1>Browsing users data</h1>
+					</div>
+					<div>
+						A deck of user cards from{' '}
+						<a href='https://randomuser.me/' target='blank'>
+							randomuser.me
+						</a>
+					</div>
 				</div>
-				<p>
-					A deck of user cards from{' '}
-					<a href='https://randomuser.me/' target='blank'>
-						randomuser.me
-					</a>
-				</p>
 				{content}
 			</div>
 		);
