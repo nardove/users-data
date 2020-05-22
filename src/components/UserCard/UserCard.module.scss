@@ -28,13 +28,17 @@
 	justify-content: space-around;
 }
 
+.UserCardDisplay h2 {
+	margin: 5px 0 0 0;
+}
+
 .Bold {
 	font-weight: bold;
 }
 
 .DisplayCard {
-	width: 80%;
-	height: 80%;
+	width: 90%;
+	height: 70vh;
 	border: 1px solid $deep_grey;
 	border-radius: 20px;
 	display: flex;
@@ -46,6 +50,12 @@
 }
 
 .DetailsContainer {
-	width: 100%;
-	height: 100%;
+	// width: 100%;
+	// height: 100%;
+}
+
+@media (min-width: 400px) {
+	.DisplayCard {
+		max-width: 600px;
+	}
 }
