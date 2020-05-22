@@ -39,12 +39,12 @@ class App extends Component {
 						<Logo />
 						<h1>Browsing users data</h1>
 					</div>
-					<p>
+					<div>
 						A deck of user cards from{' '}
 						<a href='https://randomuser.me/' target='blank'>
 							randomuser.me
 						</a>
-					</p>
+					</div>
 				</div>
 				{content}
 			</div>

@@ -52,7 +52,6 @@ class UsersContainer extends Component {
 				)
 				.delay(index * 0.15);
 		});
-		// this.cardStack.reverse();
 	}
 
 	userCardsHandler = (event) => {

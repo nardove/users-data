@@ -6,6 +6,7 @@ body {
 	font-family: 'Noto Sans SC', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
 }
 
 .App {
@@ -13,6 +14,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
+	width: 100%;
+	font-size: 0.9rem;
 }
 
 .App a {
@@ -30,8 +33,8 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-top: 5px;
 	font-size: 0.9rem;
+	margin: 5px 0 0 0;
 }
 .Logo svg {
 	width: 32px;
@@ -40,6 +43,10 @@ body {
 .Logo h1 {
 	margin: 0px 10px;
 }
-.Logo p {
-	margin-bottom: 0;
+
+.Header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
 }
