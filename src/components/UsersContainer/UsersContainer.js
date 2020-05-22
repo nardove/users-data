@@ -145,7 +145,8 @@ class UsersContainer extends Component {
 						{this.state.data.map((user, index) => (
 							<div
 								ref={(div) => (this.cardsTweenRefArray[index] = div)}
-								className={styles.UserCard}>
+								className={styles.UserCard}
+								key={Math.random()}>
 								<UserCard
 									key={user.id.value}
 									img={user.picture.large}
