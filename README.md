@@ -4,6 +4,8 @@
 
 Simple app to browse users data in a deck of cards style, build with Reactjs. Data API from [randomusersdata.com](https://randomuser.me/)
 
+[Launch app here](https://nardove-users-data.netlify.app/)
+
 **Stack:**
 
 -   Reactjs
