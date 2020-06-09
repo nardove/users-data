@@ -29,7 +29,16 @@ class App extends Component {
 
 		let content = <div>Please wait a moment, loading data ...</div>;
 		if (this.state.isUsersDataContentReady) {
-			content = <UsersContainer data={this.state.usersData} />;
+			if (this.state.usersData !== undefined) {
+				content = <UsersContainer data={this.state.usersData} />;
+			} else {
+				content = (
+					<div className={styles.FetchError}>
+						Ooops, that was not suppose to happen. There has been an error, please try
+						again later
+					</div>
+				);
+			}
 		}
 
 		return (

@@ -44,7 +44,11 @@ const UserCardDisplay = (props) => {
 			<h2>User details</h2>
 			<div className={styles.DisplayCard} ref={cardRef}>
 				<div ref={imgRef}>
-					<img className={styles.Thumbnail} src={user.picture.large} />
+					<img
+						className={styles.Thumbnail}
+						src={user.picture.large}
+						alt='User thumbnail'
+					/>
 				</div>
 				<div>
 					Full name:{' '}
